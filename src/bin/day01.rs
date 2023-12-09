@@ -49,15 +49,14 @@ fn find_first_last(line: &str) -> (u8, u8) {
     (*first, *last)
 }
 
-fn day01b(input_strings: &str) -> usize {
-    let mut sum: usize = 0;
-
-    for line in input_strings.lines() {
-        let (first, last) = find_first_last(line);
-        let linenumber: usize = format!("{}{}", first, last).parse().unwrap();
-        sum += linenumber
-    }
-    sum
+fn day01b(input: &str) -> usize {
+    input
+        .lines()
+        .map(|line| {
+            let (first, last) = find_first_last(line);
+            format!("{}{}", first, last).parse::<usize>().unwrap()
+        })
+        .sum()
 }
 
 fn main() {
