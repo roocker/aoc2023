@@ -1,87 +1,28 @@
-use std::{
-    collections::HashMap,
-    fs,
-    io::{self, BufRead, BufReader},
-    usize,
-};
-
-fn find_first_last(line: &str) -> (u8, u8) {
-    let numbers = [
-        ("one", 1),
-        ("two", 2),
-        ("three", 3),
-        ("four", 4),
-        ("five", 5),
-        ("six", 6),
-        ("seven", 7),
-        ("eight", 8),
-        ("nine", 9),
-        ("zero", 0),
-        ("null", 0),
-    ];
-
-    let mut allnumbers: Vec<(usize, u8)> = Vec::new();
-
-    println!("input line: {} ", line);
-
-    for (str, val) in numbers {
-        let mut start_i = 0;
-
-        while let Some(i) = line[start_i..].find(str) {
-            let actual_i = start_i + i;
-            println!("word '{}' at i {}", val, actual_i);
-            allnumbers.push((actual_i, val));
-
-            start_i = actual_i + 1;
-        }
-    }
-
-    for (index, char) in line.chars().enumerate() {
-        if char.is_ascii_digit() {
-            let digit = char.to_digit(10).unwrap() as u8;
-            println!("digit: {} , at i: {} ", digit, index);
-            allnumbers.push((index, digit));
-        }
-    }
-
-    println!("{:?}", allnumbers);
-    let (_, first) = allnumbers.iter().min_by_key(|x| x.0).unwrap();
-    let (_, last) = allnumbers.iter().max_by_key(|x| x.0).unwrap();
-
-    println!("input string: {} | first: {} | last {}", line, first, last);
-    println!("---");
-
-    (*first, *last)
-}
-
-fn day01b(input_strings: &str) -> usize {
-    // let mut linenumber: usize = 0;
-    let mut sum: usize = 0;
-
-    for line in input_strings.lines() {
-        let (first, last) = find_first_last(line);
-        let linenumber: usize = format!("{}{}", first, last).parse().unwrap();
-        sum += linenumber
-    }
-    sum
-}
-
 fn main() {
-    // const TEST_STRINGS: &str = "aeightseven651\nseven90nine0\n";
-    // println!("result of day01b: {}", day01b(TEST_STRINGS));
-    let filecontent = fs::read_to_string("input.txt").unwrap();
-    println!("result of day01b: {}", day01b(&filecontent));
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    const TEST_STRINGS: &str = "eightseven651\nseven90nine0\n";
-    // 81 + 70 = 151
-
-    #[test]
-    fn teststring() {
-        assert_eq!(151, day01b(TEST_STRINGS))
-    }
+    println!(" --- aoc 2023 ---");
+    // cargo run --bin day01
+    println!(" day01: * | * |");
+    println!(" day02:  |  |");
+    println!(" day03:  |  |");
+    println!(" day04:  |  |");
+    println!(" day05:  |  |");
+    println!(" day06:  |  |");
+    println!(" day07:  |  |");
+    println!(" day08:  |  |");
+    println!(" day09:  |  |");
+    println!(" day10:  |  |");
+    println!(" day11:  |  |");
+    println!(" day12:  |  |");
+    println!(" day13:  |  |");
+    println!(" day14:  |  |");
+    println!(" day15:  |  |");
+    println!(" day16:  |  |");
+    println!(" day17:  |  |");
+    println!(" day18:  |  |");
+    println!(" day19:  |  |");
+    println!(" day20:  |  |");
+    println!(" day21:  |  |");
+    println!(" day22:  |  |");
+    println!(" day23:  |  |");
+    println!(" day24:  |  |");
 }
