@@ -183,7 +183,9 @@ fn main() {
     .664.598..";
     */
 
-    // 518022
+    // ist  518022
+    // soll 515900
+    // 2122
 
     let filecontent = fs::read_to_string("input/day03.txt").unwrap();
     println!("result of day03a: {}", day03a(&filecontent));
