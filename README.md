@@ -2,6 +2,7 @@
 
 my solutions for advent of code in Rust 
 run with `cargo run --bin day0x`
+test with `cargo test --bin day0x`
 
 ## status:
 
