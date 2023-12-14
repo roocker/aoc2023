@@ -8,9 +8,9 @@ test with `cargo test --bin day0x`
 
 day | A | B | refactored |
 ---|---|---|---|
-day01 | x | x |   |
-day02 | x | x |   |
-day03 | x | x |   |
+day01 | * | * |   |
+day02 | * | * |   |
+day03 | * | * |   |
 day04 |   |   |   |
 day05 |   |   |   |
 day06 |   |   |   |
