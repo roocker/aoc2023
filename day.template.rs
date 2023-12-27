@@ -41,6 +41,7 @@ mod tests {
     fn test_day01a() {
         assert_eq!(281, day01a(TEST_STRINGS))
     }
+    #[test]
     fn test_day01b() {
         assert_eq!(281, day01b(TEST_STRINGS))
     }

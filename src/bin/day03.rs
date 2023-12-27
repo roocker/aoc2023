@@ -2,6 +2,7 @@ use itertools::Itertools;
 use std::{collections::BTreeMap, fs, usize};
 
 #[derive(Debug)]
+
 enum Value {
     Symbol(char),
     Empty,
