@@ -45,7 +45,7 @@ fn find_first_last(line: &str) -> (u8, u8) {
     let (_, first) = allnumbers.iter().min_by_key(|x| x.0).unwrap();
     let (_, last) = allnumbers.iter().max_by_key(|x| x.0).unwrap();
 
-    println!("input string: {} | first: {} | last {}", line, first, last);
+    // println!("input string: {} | first: {} | last {}", line, first, last);
     (*first, *last)
 }
 

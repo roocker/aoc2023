@@ -98,7 +98,7 @@ impl Game {
             } */
         });
 
-        println!("MIN : {},{},{}", min_r, min_g, min_b);
+        // println!("MIN : {},{},{}", min_r, min_g, min_b);
 
         min_r * min_g * min_b
     }
@@ -109,7 +109,7 @@ fn day02a(input: &str) -> usize {
         .lines()
         .map(|line| {
             let game = Game::parse(line);
-            println!("{:?}", game);
+            // println!("{:?}", game);
             Game::score_game(game)
         })
         .sum();
@@ -124,7 +124,7 @@ fn day02b(input: &str) -> usize {
         .map(|line| {
             let game = Game::parse(line);
             let power = Game::min_count(&game);
-            println!("{:?} - {}", game, power);
+            // println!("{:?} - {}", game, power);
             power
         })
         .sum();
