@@ -27,8 +27,14 @@ fn day01b(input: &str) -> usize {
 
 fn main() {
     let filecontent = fs::read_to_string("input/day01.txt").unwrap();
+
+    println!("---");
+    println!("PART A:");
     println!("result of day01a: {}", day01a(&filecontent));
+    println!("---");
+    println!("PART B:");
     println!("result of day01b: {}", day01b(&filecontent));
+    println!("---");
 }
 
 #[cfg(test)]
