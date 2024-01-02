@@ -18,7 +18,7 @@ day | A | B |
 [day04](https://adventofcode.com/2023/4) | ⭐| ⭐|
 [day05](https://adventofcode.com/2023/5) | ⭐|   |
 [day06](https://adventofcode.com/2023/6) | ⭐| ⭐|
-[day07](https://adventofcode.com/2023/7) | ⭐|   |
+[day07](https://adventofcode.com/2023/7) | ⭐| ⭐|
 [day08](https://adventofcode.com/2023/8) |   |   |
 [day09](https://adventofcode.com/2023/9) |   |   |
 [day10](https://adventofcode.com/2023/10 )|   |   |
